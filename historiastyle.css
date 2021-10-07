@@ -1,0 +1,140 @@
+
+body{
+  background-color: #f4f4f4;
+}
+h1{
+  font-size: 50px;
+  color: white;
+  align-items: center;
+}
+h2{
+  font-size: 35px;
+
+}
+p{
+  font-size: 20px;
+}
+nav{
+  background-color:#ED1C24;
+}
+.menu ul{
+  list-style: none;
+  padding:5px;
+  margin: 5px;
+  float: right;
+  background-color:#ED1C24;
+
+}
+.menu li{
+  width: 100px;
+  display: inline-block;
+  background-color: #ED1C24;
+}
+.menu a{
+  color:000000;
+  background-color: #FFD700;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  align-items: flex-end;
+}
+
+/*FFD700 el amarillo*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.Titulo {
+  grid-column: 5/13;
+  grid-row: 1;
+  background-color: #ED1C24;
+}
+.logo {
+  grid-column: 1/5;
+  grid-row: 1;
+  background-color: #ED1C24;
+}
+/*.spaceempty {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #ED1C24;
+}*/
+
+
+.imagen{
+  grid-column:10/auto;
+  grid-row: 3/auto;
+}
+.text{
+  grid-column: 3/9;
+  grid-row: 3/auto;
+}
+.textUImagen{
+  grid-column: 3/11;
+  grid-row: 4/auto;
+}
+.imageLitteLeft{
+  grid-column: 3/5;
+  grid-row: 5/auto;
+}
+.textRightImage{
+  grid-column: 6/11;
+  grid-row: 5/auto;
+}
+.textMuro{
+  grid-column: 3/11;
+  grid-row: 6/auto;
+}
+@media screen and (max-width:768px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+  .Titulo {
+    grid-column: 1/max;
+    grid-row: 2;
+  }
+  .logo {
+    grid-column: 1/max;
+    grid-row: 1;
+  }
+  /*.spaceempty {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #ED1C24;
+  }*/
+
+
+  .imagen{
+    grid-column:1/max;
+    grid-row: 3/auto;
+    align-items: center;
+  }
+  .text{
+    padding: 5px;
+    grid-column: 1/max;
+    grid-row: 4/auto;
+  }
+  .textUImagen{
+    grid-column: 1/max;
+    grid-row: 5/auto;
+  }
+  .imageLitteLeft{
+    grid-column: 1/max;
+    grid-row: 6/auto;
+  }
+  .textRightImage{
+    grid-column: 1/max;
+    grid-row: 7/auto;
+  }
+  .textMuro{
+    grid-column: 1/max;
+    grid-row: 8/auto;
+  }
+}
